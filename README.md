@@ -7,7 +7,6 @@ In this challenge I used various **Supervised Machine Learning** techniques to c
 
 - [Credit Risk Analysis Report](#credit-risk-analysis-report)
 - [Getting Started & Installing](#getting-started--installing)
-- [Resources](#resources)
 - [Contributing](#contributing)
 
 ## Credit Risk Analysis Report
@@ -27,6 +26,18 @@ In this challenge I used various **Supervised Machine Learning** techniques to c
     As this is a fairly simple machine learning model, I would recommend its use as long as a few suggestions for improvement were implemented. First, I would recommend scaling the initial features first with the `StandardScaler()` technique to standardize the data. Secondly, I would recommend the company seek out more data examples of high-risk loans. As this would balance the data and allow the model to train and test itself on high-risk loans more effectively. Seeking truely balanced natural data is unrealistic as statitistically less loans are defaulted on as lending companies have rigorous application processes to idenfify high-risk situations and reject applications before lending in the first place. Using any amount more of true data and needing to "OverSample" with the `RandomOverSampler()` to a lesser degree should create a better trained model. Thus producing better test results. Finally, assure human intervention remains a major component in the approval process. With added focus on the positives predictions, as these outcomes have the highest degree for error. For example 116 of the 120 total false predictions were "false positives", meaning a low-risk assessment should have been given when a high-risk was predicted.
 
 ## Getting Started & Installing 
+Simply run `pip install` followed by the individual library above to import. <br>
+Modules/Libraries needed:
+
+
+- `pandas`
+- `numpy`
+- `scikit-learn`
+- `pathlib`
+- `imblearn`
+
+
+
 
 ## Contributing 
 
